@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>COVID Vaccine Registration</title>
+<style>
+    #Register-form{
+        width: 300px;
+        background-color: rgb(230, 134, 163);
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-label{
+        margin: 0;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    .text-box{
+        width: auto;
+        height: auto;
+
+    }
+    #tc{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    </style>
+    <body style="background-color: rgb(121, 211, 118);">
+        <h2 style="text-align: center;"><i>COVID Vaccine Registration</i></h2>
+        <form id="Register-form">
+        <div>
+         <p class="text-label">First Name:</p> <input class="text-box" type="text" name="First Name">
+         <p class="text-label">Last Name</p>  <input class="text-box"  type="text" name="Last Name">
+       </div>
+       <div>  
+        <p class="text-label">E-mail</p> <input class="text-box" type="email" name="E-mail">
+     </div>
+    <div>
+       <p class="text-label">Mobile Number</p>  <input class="text-box" type="tel" pattern="{0-9}{2}-{0-9}{10}" placeholder="91-9999999999" name="Mobile Number">
+    </div>
+    <div>
+    <p class="text-label"></p>Gender:</p>
+    Male<input class="text-box" type="radio" name="Male">
+    Female<input class="text-box" type="radio" name="Female">
+    Other<input class="text-box" type="radio" name="Other">
+    </div>
+    <div>
+    <p class="text-label">Select Your Age Group</p>
+    </div>
+    <div>
+    <select>
+        <option value="Select One">Select one of the following...</option>
+        <option value="18+">18 to 59</option>
+        <option value="60+">60+</option>
+    </select>
+    </div>
+
+    <div>
+        <p class="text-label">Select Vaccine</p>
+        </div>
+        <div>
+        <select>
+            <option value="Select One">Select one of the following...</option>
+            <option value="Covishield">Covishield</option>
+            <option value="Covaxin">Covaxin</option>
+            <option value="SPUTNIK">SPUTNIK</option>
+        </select>
+        </div>
+    <div>
+        <textarea name="Any diseases/illnesses?" rows="4" cols="24"></textarea>
+        </div>
+        <div>
+          <input id="tc"  type="checkbox" name="T&C" value="Accepted"> I agree with T&C
+          </div>
+          <div>
+          <input type="submit" value="Register">
+          </div>
+        </form>
+    </body>
+</html>
